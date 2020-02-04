@@ -2,36 +2,34 @@
 layout: default
 ---
 
-<header>
-  <h1 class="index-title">Professional photos for any occasion</h1>
-</header>
-
 <content class="centered">
-  <div class="hero">
-    <div class="bg-1"></div>
-    <div class="bg-2"></div>
-    <div class="bg-3"></div>
-    <div class="bg-4"></div>
-    <div class="bg-5"></div>
-    <div class="bg-6"></div>
-    <div class="bg-7"></div>
-    <div class="bg-8"></div>
-    <div class="hero-content">
-      <img src="{{site.baseurl}}/assets/img/taylor_portrait_profile.jpg" alt="Logo Image" class="hero-logo">
-        <p>Phay photos is an individually owned photography business based out of Bay County. We cater to special events and personal sessions; striving to provide qualtiy and affordable services. </p>
-    </div>
-  </div>
+  <article class="page-article">
+    <div class="wrap-content">
+      <div class="page-content-about">
+        <section class="striped-bg-box">
+          <img class="about-photo" src="{{site.baseurl}}/assets/img/portrait.jpg" alt="{{page.title}}">
+          <div class="stripe1 deep-red"></div>
+          <div class="stripe2 medium-orange"></div>
+          <div class="stripe1 light-gold"></div>
+          <div class="stripe2 light-blue"></div>
+          <div class="stripe1 light-green"></div>
+          <div class="stripe2 blue-green"></div>
+          <div class="stripe1 deep-blue"></div>
+        </section>
+        <article class="about-text">
+          <p>Shane Quick is a full-stack developer with an interest 
+            in finding out how and why things work.</p>
+        </article>
+        <h2 class="top-ten-header">Recent Projects:</h2>
 
-  <p class="top-ten-header">Checkout the top photos of the month below! If you see something you like, you can reach me by clicking on the contact link in the navigation menu.</p>
-
-  <figure name="Pics_of_the_Month">
-    <div class="top-ten">
-      <img class="modalImg" alt="1" src="{{ site.baseurl }}/assets/img/top_photos/1.jpg" value="0" />
-      <img class="modalImg" alt="2" src="{{ site.baseurl }}/assets/img/top_photos/2.jpg" value="1" />
-      <img class="modalImg" alt="3" src="{{ site.baseurl }}/assets/img/top_photos/3.jpg" value="2" />
-      <img class="modalImg" alt="4" src="{{ site.baseurl }}/assets/img/top_photos/4.jpg" value="3" />
-      <img class="modalImg" alt="5" src="{{ site.baseurl }}/assets/img/top_photos/5.jpg" value="4" />
+        <figure name="Pics_of_the_Month">
+          <div class="top-ten">
+            <img class="modalImg" alt="1" src="{{ site.baseurl }}/assets/img/projects/flixter.png" value="0" />
+            <img class="modalImg" alt="2" src="{{ site.baseurl }}/assets/img/projects/nomster.png" value="1" />
+            <img class="modalImg" alt="3" src="{{ site.baseurl }}/assets/img/projects/grammable.png" value="2" />
+          </div>
+        </figure>
+      </div>
     </div>
-    <p>Click an image to enlarge it.</p>
-  </figure>
+  </article>
 </content>

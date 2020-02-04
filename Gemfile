@@ -1,5 +1,5 @@
 source "https://rubygems.org"
-ruby '~> 2.6.0'
+#ruby=ruby-2.6.3
 
 gem "jekyll", ">= 3.6.3"
 gem "activesupport", ">= 4.1.11"
