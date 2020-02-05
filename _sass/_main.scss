@@ -819,10 +819,6 @@ pre {
   font-size: 2.5rem;
 }
 
-.big-G {
-  font-size: 3rem;
-}
-
 // Sidebar
 .sidebar {
   background-image: url($baseurl + "/assets/img/bg.jpg");
@@ -994,12 +990,6 @@ img.post-image, img.page-img {
   border-bottom: 1px solid #ccc;
 }
 
-.page-border-left {
-  border: {
-    left: 1px solid #ccc;
-  }
-}
-
 .centered {
   text-align: center;
 }
@@ -1084,9 +1074,7 @@ img.post-image, img.page-img {
   }
 }
 
-// About Page
-
-.page-content-about {
+.page-content-index {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -1095,11 +1083,15 @@ img.post-image, img.page-img {
   border-bottom: 1px solid #ccc;
 }
 
-.about-text {
+.index-text {
   font-size: 0.8rem;
+  a {
+    color: $deep-blue;
+    text-decoration: none;
+  }
 }
 
-.about-photo {
+.index-photo {
   position: absolute;
   top: 5%;
   max-height: 90%;

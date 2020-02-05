@@ -1,21 +1,3 @@
-/* Event handler for Image-viewer module */
-$(document).ready(function() {
-
-  $(".thumb-container img").click(function(e) {
-    const image = $(this);
-    const imgSource = image.attr("src");
-    const imgAlt = image.attr("alt");
-    const viewImg = document.getElementById("viewImg");
-
-    $(".slide-bg").css(`background-image`, `url(${imgSource})`);
-    viewImg.src = imgSource;
-    viewImg.alt = imgAlt;
-
-    e.preventDefault();
-
-  })
-});
-
 /* MODAL IMAGE VIEWER */
 
 $(document).ready(function() {
