@@ -1025,7 +1025,15 @@ img.post-image, img.page-img {
   }
 }
 
-// Form
+// Contact page
+
+.contact-email {
+  width: 100%;
+  text-align: center;
+  h2 { color: $light-gold; }
+  p { margin: 0; }
+}
+
 .form {
   max-width: 100%;
   width: 25rem;
@@ -1144,6 +1152,7 @@ img.post-image, img.page-img {
 }
 
 // Media Query
+
 @media screen and (max-width: 960px) {
   .sidebar {
     width: 16rem;
