@@ -826,6 +826,9 @@ pre {
   background-size: cover;
   background-color: lighten(#2d2a2a, 25%);
   background-blend-mode: multiply;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   position: fixed;
   top: 0;
   left: 0;
@@ -876,6 +879,7 @@ pre {
 }
 
 .sidebar-social {
+  margin-top: 30%;
   text-align: center;
   .social-items {
     display: inline-block;
@@ -927,6 +931,10 @@ pre {
     line-height: 20px;
     margin: 0;
   }
+}
+
+.sidebar a:hover {
+  text-decoration: none;
 }
 
 .page-header {
