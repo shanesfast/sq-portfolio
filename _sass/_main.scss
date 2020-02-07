@@ -5,6 +5,7 @@ $light-blue: #5dcae4;
 $light-green: #36c697;
 $blue-green: #2a9da9;
 $deep-blue: #124469;
+$medium-gray: #00242f;
 
 /*! normalize.css v6.0.0 | MIT License | github.com/necolas/normalize.css */
 /* Document
@@ -752,7 +753,7 @@ html {
 }
 
 body {
-  color: #515151;
+  color: #fff;
   margin: 0;
   background-color: #ecf3f3;
 }
@@ -762,11 +763,11 @@ img {
 }
 
 a {
-  color: #15F3A8;
+  color: $medium-orange;
   text-decoration: none;
   &:hover {
     text-decoration: underline;
-    color: #1bdc9b;
+    color: $light-gold;
   }
 }
 
@@ -821,10 +822,9 @@ pre {
 
 // Sidebar
 .sidebar {
-  background-image: url($baseurl + "/assets/img/bg.jpg");
   background-position-x: center;
   background-size: cover;
-  background-color: lighten(#2d2a2a, 25%);
+  background-color: $medium-gray;
   background-blend-mode: multiply;
   display: flex;
   flex-direction: column;
@@ -939,13 +939,11 @@ pre {
 
 .page-header {
   h1 {
-    font-size: 50px;
-    line-height: 0;
     margin: 0;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #ccc;
   }
   h3 {
-    font-size: 50px;
-    line-height: 0;
     margin: 0;
   }
 }
@@ -960,15 +958,14 @@ pre {
     margin-bottom: 1rem;
   }
   .wrap-content {
-    background-color: #fff;
+    background-color: $medium-gray;
     padding: 1rem;
   }
   .title-article, .page-title, .post-title {
     margin-bottom: 0;
     transition: all .3s;
-    color: $blue-green;
+    color: #fff;
     font-size: 2.5rem;
-    margin-top: 0.67rem;
     a {
       color: #15F3A8;
       text-decoration: none;
@@ -1030,8 +1027,12 @@ img.post-image, img.page-img {
 .contact-email {
   width: 100%;
   text-align: center;
-  h2 { color: $light-gold; }
-  p { margin: 0; }
+  margin-top: 20px;
+  h2 { 
+    color: $light-gold;
+    margin-bottom: 20px;
+  }
+  p { margin: 0 0 10px 0; }
 }
 
 .form {
@@ -1076,19 +1077,28 @@ img.post-image, img.page-img {
   font-size: 0.8rem;
   text-transform: uppercase;
   padding: 1rem 1.5rem;
-  color: #124469;
-  background: #2aa1a9;
-  border: 0;
+  color: $medium-gray;
+  background: $light-gold;
+  border: 1px solid $light-gold;
   border-radius: 0;
   outline: 0;
   letter-spacing: 2px;
   cursor: pointer;
   transition: all .4s;
   &:hover {
-    background-color: #124469;
-    color: #2aa1a9;
+    background-color: $medium-gray;
+    color: $light-gold;
   }
 }
+
+.gray-border-line {
+  height: 1px;
+  width: 100%;
+  border-bottom: 1px solid #ccc;
+  margin-top: 20px;
+}
+
+// Index
 
 .page-content-index {
   display: flex;
@@ -1102,7 +1112,7 @@ img.post-image, img.page-img {
 .index-text {
   font-size: 0.8rem;
   a {
-    color: $deep-blue;
+    color: $light-gold;
     text-decoration: none;
   }
 }

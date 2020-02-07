@@ -2,47 +2,27 @@
 
 .cards {
   @include grid-container;
-  margin-top: 50px;
-
-  a {
-    text-decoration: none;
-    color: #515151;
-
-    &:hover {
-      color: #000;
-    }
-  }
+  border-bottom: 1px solid #ccc;
 }
 
 .card {
-  $base-border-color: gainsboro !default;
-  $base-border-radius: 3px !default;
-  $base-background-color: white !default;
+  $base-border-radius: 10px !default;
   $base-spacing: 1.5em !default;
-  $action-color: #477DCA !default;
-  $dark-gray: #333 !default;
-  $base-font-color: $dark-gray !default;
-  $card-border-color: $base-border-color;
+  $card-border-color: $medium-gray !default;
   $card-border: 1px solid $card-border-color;
-  $card-background: lighten($card-border-color, 10%);
+  $card-background: lighten(gainsboro, 10%);
   $card-header-background: $card-background;
-  $card-margin: 1em;
-  $card-image-hover-opacity: 0.7;
-  $card-image-hover-color: #2aa1a9;
 
   margin-bottom: 20px;
   background-color: $card-background;
-  border: $card-border;
   border-radius: $base-border-radius;
-  box-shadow: 0 2px 4px darken($base-background-color, 10%);
-  cursor: pointer;
   transition: all 0.2s ease-in-out;
   overflow: hidden;
   @include grid-column(3 of 9);
 
     .card-image {
       display: flex;
-      background-color: #000;
+      background-color: $blue-green;
       max-height: 230px;
       overflow: hidden;
 
@@ -52,7 +32,7 @@
         transition: all 0.2s ease-in-out;
         width: 100%;
         min-height: 250px;
-        object-fit: contain;
+        object-fit: cover;
       }
     }
 
@@ -60,6 +40,7 @@
     background-color: $card-header-background;
     border-bottom: $card-border;
     border-radius: $base-border-radius $base-border-radius 0 0;
+    color: $medium-gray;
     font-weight: bold;
     line-height: 1.5em;
     text-align: center;
@@ -72,18 +53,17 @@
     line-height: 1.5em;
     text-align: center;
     padding: ($base-spacing / 2) ($base-spacing / 2);
-
+    i { color: $medium-gray; }
     p {
+      color: $medium-gray;
       margin: 0 0 ($base-spacing / 2);
     }
   }
 
   &:focus,
   &:hover {
-    cursor: pointer;
-
     img {
-      opacity: $card-image-hover-opacity;
+      opacity: 0.7;
     }
   }
 

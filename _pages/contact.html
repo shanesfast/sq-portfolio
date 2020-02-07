@@ -1,29 +1,38 @@
 ---
-layout: post
+layout: default
 title: Contact
 permalink: /contact/
 ---
 
-<section class="contact-email">
-  <h2>shanequickdev@gmail.com</h2>
-  <p>-or-</p>
-</section>
+<article class="page-article">
+    <div class="wrap-content">
+      <header class="page-header">
+        <h1 class="page-title">{{page.title}}</h1>
+      </header>
 
-<form class="form" action="https://formspree.io/shanequickdev@gmail.com" method="POST">
-  <div class="form-item">
-      <label class="contact-label" for="name">Name:</label>
-      <input type="text" placeholder="Your name" id="name" class="contact-input" name="name" tabindex="1" required/>
+      <section class="contact-email">
+        <h2>shanequickdev@gmail.com</h2>
+        <p>-or-</p>
+      </section>
+
+      <form class="form" action="https://formspree.io/shanequickdev@gmail.com" method="POST">
+        <div class="form-item">
+            <label class="contact-label" for="name">Name:</label>
+            <input type="text" placeholder="Your name" id="name" class="contact-input" name="name" tabindex="1" required/>
+        </div>
+        <div class="form-item">
+            <label class="contact-label" for="email">Email:</label>
+            <input type="email" placeholder="Your email" id="email" class="contact-input" name="_replyto" tabindex="2" required/>
+        </div>
+        <div class="form-item">
+          <label class="contact-label" for="message">Message:</label>
+          <textarea class="contact-textarea" placeholder="Your message" class="contact-input" rows="4" id="message" name="message" tabindex="3" required></textarea>
+        </div>
+        <div class="form-item">
+          <button type="submit" value="Send" class="form-btn">Send</button>
+        </div>
+        <input type="hidden" name="_next" value="https://shanesfast.github.io/portfolio/contact/"/>
+      </form>
+      <div class="gray-border-line"></div>
   </div>
-  <div class="form-item">
-      <label class="contact-label" for="email">Email:</label>
-      <input type="email" placeholder="Your email" id="email" class="contact-input" name="_replyto" tabindex="2" required/>
-  </div>
-  <div class="form-item">
-    <label class="contact-label" for="message">Message:</label>
-    <textarea class="contact-textarea" placeholder="Your message" class="contact-input" rows="4" id="message" name="message" tabindex="3" required></textarea>
-  </div>
-  <div class="form-item">
-    <button type="submit" value="Send" class="form-btn">Send</button>
-  </div>
-  <input type="hidden" name="_next" value="https://shanesfast.github.io/portfolio/contact/"/>
-</form>
+</article>
