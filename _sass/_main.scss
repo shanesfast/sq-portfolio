@@ -1030,9 +1030,17 @@ img.post-image, img.page-img {
   margin-top: 20px;
   h2 { 
     color: $light-gold;
-    margin-bottom: 20px;
+    margin: 20px;
   }
-  p { margin: 0 0 10px 0; }
+  p { margin: 0; }
+}
+
+.email-box {
+  background: #ecf3f3;
+  border: 5px solid #dba034;
+  width: 60%;
+  margin: 0 auto 20px auto;
+  border-radius: 3px;
 }
 
 .form {
