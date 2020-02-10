@@ -862,10 +862,26 @@ pre {
     color: #fff;
     font-weight: 700;
     transition: all .35s;
+  }
+  .hover-red {
     &:hover {
       transform: translateY(3px);
       background-color: $deep-red;
       color: $medium-orange;
+    }
+  }
+  .hover-green {
+    &:hover {
+      transform: translateY(3px);
+      background-color: $light-green;
+      color: $deep-blue;
+    }
+  }
+  .hover-blue {
+    &:hover {
+      transform: translateY(3px);
+      background-color: $blue-green;
+      color: $deep-red;
     }
   }
 }
