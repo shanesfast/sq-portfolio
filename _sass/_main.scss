@@ -1216,10 +1216,24 @@ img.post-image, img.page-img {
 
 // Icons
 
+.bootstrap-icon {
+  height: 65px;
+  width: 65px;
+  background-image: url($baseurl + "/assets/img/languages/bootstrap.png");
+  background-size: cover;
+}
+
 .css3-icon {
   height: 65px;
   width: 50px;
   background-image: url($baseurl + "/assets/img/languages/css3.png");
+  background-size: cover;
+}
+
+.express-icon {
+  height: 65px;
+  width: 65px;
+  background-image: url($baseurl + "/assets/img/languages/node.png");
   background-size: cover;
 }
 
@@ -1253,6 +1267,13 @@ img.post-image, img.page-img {
   background-size: cover;
 }
 
+.jquery-icon {
+  height: 65px;
+  width: 65px;
+  background-image: url($baseurl + "/assets/img/languages/jquery.png");
+  background-size: cover;
+}
+
 .language-box {
   height: 100px;
   width: 50%;
@@ -1269,13 +1290,6 @@ img.post-image, img.page-img {
     position: relative;
     z-index: 1;
   }
-}
-
-.node-icon {
-  height: 65px;
-  width: 65px;
-  background-image: url($baseurl + "/assets/img/languages/node.png");
-  background-size: cover;
 }
 
 .rails-icon {
