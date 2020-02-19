@@ -884,6 +884,13 @@ pre {
       color: $deep-red;
     }
   }
+  .hover-orange {
+    &:hover {
+      transform: translateY(3px);
+      background-color: $medium-orange;
+      color: darken($light-green, 15%);
+    }
+  }
 }
 
 .sidebar-container {
