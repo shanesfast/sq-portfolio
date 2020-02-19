@@ -1259,6 +1259,7 @@ img.post-image, img.page-img {
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
+  margin-bottom: 10px;
 }
 
 .language-header {
@@ -1268,6 +1269,27 @@ img.post-image, img.page-img {
     position: relative;
     z-index: 1;
   }
+}
+
+.node-icon {
+  height: 65px;
+  width: 65px;
+  background-image: url($baseurl + "/assets/img/languages/node.png");
+  background-size: cover;
+}
+
+.rails-icon {
+  height: 65px;
+  width: 70px;
+  background-image: url($baseurl + "/assets/img/languages/rubyrails.png");
+  background-size: cover;
+}
+
+.react-icon {
+  height: 65px;
+  width: 65px;
+  background-image: url($baseurl + "/assets/img/languages/react.png");
+  background-size: cover;
 }
 
 .ruby-icon {
