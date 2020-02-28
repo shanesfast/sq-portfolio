@@ -18,6 +18,7 @@
   border-radius: $base-border-radius;
   transition: all 0.2s ease-in-out;
   overflow: hidden;
+  max-height: 21rem;
   @include grid-column(3 of 9);
 
     .card-image {
@@ -35,6 +36,10 @@
         object-fit: cover;
       }
     }
+
+  .override-bg {
+    background-color: black;
+  }
 
   .card-header {
     background-color: $card-header-background;
