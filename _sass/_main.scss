@@ -863,6 +863,10 @@ pre {
     font-weight: 700;
     transition: all .35s;
   }
+  .orange-border-bottom { border-bottom: 5px solid $medium-orange; }
+  .blue-border-bottom { border-bottom: 5px solid $blue-green; }
+  .red-border-bottom { border-bottom: 5px solid $deep-red; }
+  .green-border-bottom { border-bottom: 5px solid $light-green; }
   .hover-red {
     &:hover {
       transform: translateY(3px);
