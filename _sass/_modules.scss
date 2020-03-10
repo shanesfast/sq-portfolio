@@ -18,7 +18,7 @@
   border-radius: $base-border-radius;
   transition: all 0.2s ease-in-out;
   overflow: hidden;
-  max-height: 21rem;
+  min-height: 23rem;
   @include grid-column(3 of 9);
 
     .card-image {
@@ -54,15 +54,19 @@
   }
 
   .card-copy {
+    display: flex;
+    flex-wrap: wrap;
     font-size: 0.9em;
     line-height: 1.5em;
     text-align: center;
     padding: ($base-spacing / 2) ($base-spacing / 2);
     i { color: $medium-gray; }
     p {
+      flex-basis: 100%;
       color: $medium-gray;
       margin: 0 0 ($base-spacing / 2);
     }
+    div { flex-basis: 100%; }
   }
 
   &:focus,
@@ -81,14 +85,6 @@
   }
 }
 
-.first-card {
-  @include grid-column(6 of 9);
-}
-
-.last-card {
-  @include grid-column(6 of 9);
-}
-
 /// 768 px screen width
 
 @media only screen and (max-width: 48em) {
@@ -105,22 +101,6 @@
   .card {
     @include grid-column(1 of 1);
     margin-left: 0;
-  }
-
-  .first-card {
-    @include grid-column(1 of 1);
-    margin-left: 0;
-  }
-
-  .last-card {
-    @include grid-column(1 of 1);
-    margin-left: 0;
-  }
-}
-
-@media only screen and (min-width: 71.563em) {
-  .card {
-    min-height: 21rem;
   }
 }
 
