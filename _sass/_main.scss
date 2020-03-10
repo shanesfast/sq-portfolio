@@ -1067,6 +1067,7 @@ img.post-image, img.page-img {
   text-align: center;
   margin-top: 20px;
   h2 { 
+    font-size: 1rem;
     color: $light-gold;
     margin: 20px;
   }
@@ -1324,12 +1325,9 @@ img.post-image, img.page-img {
 // Media Query
 
 @media screen and (max-width: 960px) {
-  .sidebar {
-    width: 16rem;
-  }
-  .content {
-    margin-left: 18rem;
-  }
+  .sidebar { width: 16rem; }
+  .content { margin-left: 18rem; }
+  .page-stripe { top: 65px; }
 }
 
 @media screen and (max-width: 768px) {
@@ -1342,18 +1340,18 @@ img.post-image, img.page-img {
     padding: 0;
     margin: 0;
   }
-  .content {
-    margin: 0 auto;
-  }
+  .content { margin: 0 auto; }
+  .page-stripe { top: 60px; }
+}
+
+@media screen and (max-width: 500px) {
+  .page-stripe { top: 55px; }
 }
 
 @media screen and (max-width: 360px) {
-  .previous{
-    margin-bottom: 0.5rem;
-  }
-  .previous, .next {
-    display: block;
-  }
+  .page-stripe { top: 35px; }
+  .previous { margin-bottom: 0.5rem; }
+  .previous, .next { display: block; }
   .main-article, .page-article, .post {
     .title-article, .page-title, .post-title {
       font-size: 2rem;
