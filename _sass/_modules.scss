@@ -1,7 +1,9 @@
 /* PROJECT CARDS */
 
 .cards {
-  @include grid-container;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   border-bottom: 1px solid #ccc;
 }
 
@@ -18,8 +20,7 @@
   border-radius: $base-border-radius;
   transition: all 0.2s ease-in-out;
   overflow: hidden;
-  min-height: 23rem;
-  @include grid-column(3 of 9);
+  min-height: 20rem;
 
     .card-image {
       display: flex;
@@ -82,25 +83,6 @@
     .card-header {
       background-color: $card-background;
     }
-  }
-}
-
-/// 768 px screen width
-
-@media only screen and (max-width: 48em) {
-  .cards {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-  }
-}
-
-/// 1145 px screen width
-
-@media only screen and (max-width: 71.563em) {
-  .card {
-    @include grid-column(1 of 1);
-    margin-left: 0;
   }
 }
 

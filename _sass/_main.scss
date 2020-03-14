@@ -836,7 +836,7 @@ pre {
   background-blend-mode: multiply;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  // justify-content: space-between;
   position: fixed;
   top: 0;
   left: 0;
@@ -1305,28 +1305,22 @@ img.post-image, img.page-img {
   background-size: cover;
 }
 
-// Media Query
-
 @media screen and (max-width: 960px) {
-  .sidebar { width: 16rem; }
-  .content { margin-left: 18rem; }
-}
-
-@media screen and (max-width: 768px) {
   .sidebar {
     position: inherit;
     width: 100%;
     text-align: center;
-    flex-direction: row;
   }
   .logo { display: none; }
   .sidebar-menu {
     display: flex;
-    flex-direction: row;
     padding: 0;
-    margin: 0;
+    margin: 0 auto;
   }
-  .sidebar-social { margin-top: 0; }
+  .sidebar-social { 
+    position: relative;
+    margin: 2rem auto 0 auto;
+  }
   .content { margin: 0 auto; }
 }
 
