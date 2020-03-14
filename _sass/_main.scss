@@ -1220,6 +1220,7 @@ img.post-image, img.page-img {
 .bootstrap-icon {
   height: 65px;
   width: 65px;
+  min-width: 65px;
   background-image: url($baseurl + "/assets/img/languages/bootstrap.png");
   background-size: cover;
 }
@@ -1227,6 +1228,7 @@ img.post-image, img.page-img {
 .css3-icon {
   height: 65px;
   width: 50px;
+  min-width: 50px;
   background-image: url($baseurl + "/assets/img/languages/css3.png");
   background-size: cover;
 }
@@ -1234,6 +1236,7 @@ img.post-image, img.page-img {
 .express-icon {
   height: 65px;
   width: 65px;
+  min-width: 65px;
   background-image: url($baseurl + "/assets/img/languages/node.png");
   background-size: cover;
 }
@@ -1241,6 +1244,7 @@ img.post-image, img.page-img {
 .html5-icon {
   height: 65px;
   width: 50px;
+  min-width: 50px;
   background-image: url($baseurl + "/assets/img/languages/html5.png");
   background-size: cover;
 }
@@ -1256,6 +1260,7 @@ img.post-image, img.page-img {
 .js-icon {
   height: 65px;
   width: 50px;
+  min-width: 50px;
   background-image: url($baseurl + "/assets/img/languages/js.png");
   background-size: cover;
 }
@@ -1263,6 +1268,7 @@ img.post-image, img.page-img {
 .jquery-icon {
   height: 65px;
   width: 65px;
+  min-width: 65px;
   background-image: url($baseurl + "/assets/img/languages/jquery.png");
   background-size: cover;
 }
@@ -1287,6 +1293,7 @@ img.post-image, img.page-img {
 .rails-icon {
   height: 65px;
   width: 70px;
+  min-width: 70px;
   background-image: url($baseurl + "/assets/img/languages/rubyrails.png");
   background-size: cover;
 }
@@ -1294,6 +1301,7 @@ img.post-image, img.page-img {
 .react-icon {
   height: 65px;
   width: 65px;
+  min-width: 65px;
   background-image: url($baseurl + "/assets/img/languages/react.png");
   background-size: cover;
 }
@@ -1301,6 +1309,7 @@ img.post-image, img.page-img {
 .ruby-icon {
   height: 65px;
   width: 65px;
+  min-width: 65px;
   background-image: url($baseurl + "/assets/img/languages/ruby.png");
   background-size: cover;
 }
@@ -1322,6 +1331,12 @@ img.post-image, img.page-img {
     margin: 2rem auto 0 auto;
   }
   .content { margin: 0 auto; }
+}
+
+@media screen and (max-width: 500px) {
+  content p {
+    font-size: 1.2rem;
+  }
 }
 
 @media screen and (max-width: 360px) {
