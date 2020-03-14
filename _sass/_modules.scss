@@ -21,6 +21,7 @@
   transition: all 0.2s ease-in-out;
   overflow: hidden;
   min-height: 20rem;
+  min-width: 30rem;
 
     .card-image {
       display: flex;
@@ -37,10 +38,6 @@
         object-fit: cover;
       }
     }
-
-  .override-bg {
-    background-color: black;
-  }
 
   .card-header {
     background-color: $card-header-background;
@@ -83,6 +80,19 @@
     .card-header {
       background-color: $card-background;
     }
+  }
+
+  // Icon Attributions
+
+  .override-bg {
+    background-color: black;
+  }
+
+  #override-card-image {
+    min-height: 0;
+    margin: auto;
+    height: 200px;
+    width: 200px;
   }
 }
 
@@ -131,4 +141,14 @@
     display: inline-block;
     vertical-align: middle;
   }
+}
+
+// Media Queries
+
+@media screen and (max-width: 1080px) {
+  .card { min-width: 28rem; }
+}
+
+@media screen and (max-width: 500px) {
+  .card { min-width: 25rem; }
 }
