@@ -58,6 +58,11 @@
     line-height: 1.5em;
     text-align: center;
     padding: ($base-spacing / 2) ($base-spacing / 2);
+    b { 
+      flex-basis: 100%;
+      color: $medium-gray;
+      margin: 0 0 ($base-spacing / 2);
+    }
     i { color: $medium-gray; }
     p {
       flex-basis: 100%;
